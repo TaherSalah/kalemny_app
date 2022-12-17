@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "849910041079",
+    "project_id": "kalemny-app",
+    "storage_bucket": "kalemny-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849910041079:android:09dd41c1ee14cfd73a86f2",
+        "android_client_info": {
+          "package_name": "com.example.kalemny_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849910041079-957svgsol30c8agad0908bbpa7oggrch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kalemny_app",
+            "certificate_hash": "2f40349c6a819238bdf4596dad69b2ca292ecf77"
+          }
+        },
+        {
+          "client_id": "849910041079-7a1girm0n61u7qnv5ov5r3l71remon3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr4GzvxVr9yP8DxzusbQj7W3CJUFZYj9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849910041079-7a1girm0n61u7qnv5ov5r3l71remon3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
