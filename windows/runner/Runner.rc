@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "kalemny_app" "\0"
+            VALUE "FileDescription", "kalamni_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "kalemny_app" "\0"
+            VALUE "InternalName", "kalamni_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "kalemny_app.exe" "\0"
-            VALUE "ProductName", "kalemny_app" "\0"
+            VALUE "OriginalFilename", "kalamni_app.exe" "\0"
+            VALUE "ProductName", "kalamni_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

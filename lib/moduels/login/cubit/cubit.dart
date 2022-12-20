@@ -2,13 +2,8 @@ import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kalemny_app/moduels/login/cubit/states.dart';
-import 'package:kalemny_app/shared/network/local/cache_helper.dart';
-
-
+import 'package:kalamni_app/moduels/login/cubit/states.dart';
 import '../../../models/social_login_model/login_model.dart';
-import '../../../shared/network/remote/dio_helper.dart';
-import '../../../shared/network/remote/end_points.dart';
 
 
 class LoginCubit extends Cubit<LoginStates>
@@ -28,7 +23,7 @@ class LoginCubit extends Cubit<LoginStates>
     FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password).then((value) {
       emit(LoginSuccessState(value.user!.uid));
           print(value.user!.email);
-          print(value.user!.uid);
+          print(value.user!.emailVerified);
     }).catchError((error){
       print('error is$error.toString()');
       emit(LoginErrorState(error));

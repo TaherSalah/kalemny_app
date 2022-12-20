@@ -3,13 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_conditional_rendering/conditional.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:kalemny_app/home/home_screen.dart';
-import 'package:kalemny_app/moduels/sign_up/cubit/cubit.dart';
-import 'package:kalemny_app/moduels/sign_up/cubit/states.dart';
 
+
+import '../../home/home_screen.dart';
 import '../../shared/components/component.dart';
 import '../../shared/components/validate.dart';
 import '../login/login_screen.dart';
+import 'cubit/cubit.dart';
+import 'cubit/states.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -211,6 +212,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                         password: passwordController.text,
                                         phone: phoneController.text);
                                   }
+                                  navigateAndFinish(context, LoginScreen());
                                 },
                                 color: Colors.white),
                             fallbackBuilder: (context) =>

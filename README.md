@@ -1,4 +1,4 @@
-# kalemny_app
+# kalamni_app
 
 A new Flutter project.
 

@@ -113,3 +113,8 @@ void navigateAndFinish(context, widget) => Navigator.pushAndRemoveUntil(
         (route) =>
     false); //////////////////=> return false or true <==////////////////
 ///////////  End navigate And Finish Method /////////////
+///////////  Start  default Text Button Widget /////////////
+Widget defaultTextButton(
+    {required VoidCallback onPressed, required String text}) =>
+    TextButton(onPressed: onPressed, child: Text(text.toUpperCase()));
+///////////  End  default Text Button Widget /////////////

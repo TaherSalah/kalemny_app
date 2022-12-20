@@ -3,9 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kalemny_app/models/social_create_user/social_create_user_model.dart';
-import 'package:kalemny_app/moduels/sign_up/cubit/states.dart';
+import 'package:kalamni_app/moduels/sign_up/cubit/states.dart';
 
+
+import '../../../models/social_create_user/social_create_user_model.dart';
 import '../../../models/social_get_user_data/user_data_model.dart';
 
 class SignUpCubit extends Cubit<SignUpStates> {

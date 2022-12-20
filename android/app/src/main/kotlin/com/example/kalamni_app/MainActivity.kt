@@ -1,4 +1,4 @@
-package com.example.kalemny_app
+package com.example.kalamni_app
 
 import io.flutter.embedding.android.FlutterActivity
 

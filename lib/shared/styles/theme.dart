@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:kalemny_app/shared/styles/style.dart';
+import 'package:kalamni_app/shared/styles/style.dart';
 
 ThemeData lightMode = ThemeData(
     textTheme: const TextTheme(

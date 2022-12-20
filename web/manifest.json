@@ -1,6 +1,6 @@
 {
-    "name": "kalemny_app",
-    "short_name": "kalemny_app",
+    "name": "kalamni_app",
+    "short_name": "kalamni_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
