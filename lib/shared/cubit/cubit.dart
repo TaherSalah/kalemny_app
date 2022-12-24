@@ -32,8 +32,14 @@ class SocialCubit extends Cubit<SocialState> {
 
 
   //////// bottom nav bar //////
+
 int currentIndex=0;
-  List<Widget>screens=[];
+  List<Widget>screens=[
+
+  ];
+  List<String>titles=[
+    ''
+  ];
   void changeBottomNavBar(int index){
     currentIndex=index;
     emit(SocialChangeBottomNavBarState());
