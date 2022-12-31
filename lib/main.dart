@@ -2,13 +2,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kalamni_app/layout/layout_screen.dart';
 import 'package:kalamni_app/shared/components/constance.dart';
 import 'package:kalamni_app/shared/cubit/cubit.dart';
 import 'package:kalamni_app/shared/cubit/state.dart';
 import 'package:kalamni_app/shared/network/local/cache_helper.dart';
 import 'package:kalamni_app/shared/network/remote/dio_helper.dart';
 
-import 'home/home_screen.dart';
 import 'moduels/login/login_screen.dart';
 
 
@@ -25,7 +25,7 @@ Widget? widget;
   uIdV =CacheHelper.getData(key: 'uId');
 
   if (uIdV != null ){
-    widget = const HomeScreen();
+    widget = const LayoutScreen();
   }else{
     widget= const LoginScreen();
   }
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
         builder: (context, state) {
           return  MaterialApp(
           theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.cyan,
             appBarTheme: AppBarTheme(backgroundColor: Colors.white,elevation: 0.0)
           ),
           debugShowCheckedModeBanner: false,

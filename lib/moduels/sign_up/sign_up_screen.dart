@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_conditional_rendering/conditional.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:hexcolor/hexcolor.dart';
-
-
-import '../../home/home_screen.dart';
+import 'package:kalamni_app/layout/layout_screen.dart';
 import '../../shared/components/component.dart';
 import '../../shared/components/validate.dart';
 import '../login/login_screen.dart';
@@ -39,7 +36,7 @@ class _SignupScreenState extends State<SignupScreen> {
       child: BlocConsumer<SignUpCubit, SignUpStates>(
         listener: (context, state) {
           if(state is CreateUserSuccessState) {
-            navigateAndFinish(context, const HomeScreen());
+            navigateAndFinish(context, const LayoutScreen());
           }
 
         },

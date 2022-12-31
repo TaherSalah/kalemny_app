@@ -5,8 +5,8 @@ import '../../shared/components/component.dart';
 import '../../shared/cubit/cubit.dart';
 import '../../shared/cubit/state.dart';
 
-class ChatScreen extends StatelessWidget {
-  const ChatScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

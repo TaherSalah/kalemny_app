@@ -57,6 +57,7 @@ dependencies:
   flutter_settings_screens:
   adaptive_action_sheet:
   flutter_slidable:
+  convex_bottom_bar:
 #fire base
   firebase_core:
   firebase_auth:

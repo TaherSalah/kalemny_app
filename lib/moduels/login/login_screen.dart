@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:hexcolor/hexcolor.dart';
+import 'package:kalamni_app/layout/layout_screen.dart';
 import 'package:kalamni_app/moduels/login/cubit/states.dart';
-import '../../home/home_screen.dart';
 import '../../shared/components/component.dart';
 import '../../shared/components/validate.dart';
 import '../../shared/network/local/cache_helper.dart';
@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
               key: 'uId',
               value: state.uId,
             ).then((value) {
-              navigateAndFinish(context, const HomeScreen());
+              navigateAndFinish(context, const LayoutScreen());
             }).catchError((error) {
               print(error.toString());
             });
