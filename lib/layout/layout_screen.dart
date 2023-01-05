@@ -2,6 +2,7 @@ import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kalamni_app/shared/styles/icon_broken.dart';
+import 'package:kalamni_app/shared/styles/style.dart';
 
 import '../../shared/cubit/cubit.dart';
 import '../../shared/cubit/state.dart';
@@ -20,7 +21,7 @@ class LayoutScreen extends StatelessWidget {
               return  Scaffold(
                   appBar: AppBar(
                     title: Text(
-                      'Kalamni',
+                      '${cubit.titles[cubit.currentIndex]}',
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     actions:  [
@@ -31,8 +32,10 @@ class LayoutScreen extends StatelessWidget {
                   body: cubit.screens[cubit.currentIndex],
                   bottomNavigationBar: ConvexAppBar(
                     initialActiveIndex: cubit.currentIndex,
+                    backgroundColor: whiteColor,
+                    elevation: 0.9,
                     items: const [
-                      TabItem(icon: Icon(IconBroken.Home), title: 'Home'),
+                      TabItem(icon: Icon(IconBroken.Home), title: 'Home',),
                       TabItem(icon: Icon(IconBroken.Chat), title: 'Chats'),
                       TabItem(icon: Icon(IconBroken.Plus), title: 'Add Post'),
                       TabItem(icon: Icon(IconBroken.User), title: 'Users'),
